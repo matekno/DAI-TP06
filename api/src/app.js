@@ -4,9 +4,6 @@ import CAVRouter from "./controllers/PersonajesController.js";
 import cors from 'cors'
 import bp from 'body-parser';
 
-
-
-
 const app = express();
 const port = 3000;
 
