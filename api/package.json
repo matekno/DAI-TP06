@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon ./src/app.js",
+    "dev": "C:\\Users\\devandroid\\AppData\\Roaming\\npm\\nodemon.cmd ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "firebase": "^9.8.4",
     "mssql": "^8.1.2",
     "uuid": "^8.3.2",
     "winston": "^3.8.1"

@@ -42,3 +42,64 @@
 2022-07-04 10:31:43;[32minfo[39m;"Started in port 3000"}
 2022-07-04 10:31:44;[32minfo[39m;undefined}
 2022-07-04 10:31:44;[32minfo[39m;[{"testID":"AEC65CD6-59DF-4B33-9CC7-4417764A7C23"}]}
+2022-07-07 08:26:25;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:26:43;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:26:48;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:29:59;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:30:00;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:30:27;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:30:41;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:30:42;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:31:32;[32minfo[39m;undefined}
+2022-07-07 08:32:25;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:32:25;[32minfo[39m;undefined}
+2022-07-07 08:32:48;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:32:59;[32minfo[39m;undefined}
+2022-07-07 08:33:13;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:33:17;[32minfo[39m;undefined}
+2022-07-07 08:33:17;[32minfo[39m;undefined}
+2022-07-07 08:33:17;[32minfo[39m;undefined}
+2022-07-07 08:33:17;[32minfo[39m;undefined}
+2022-07-07 08:33:29;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:33:30;[32minfo[39m;undefined}
+2022-07-07 08:33:59;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:34:03;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:34:09;[32minfo[39m;undefined}
+2022-07-07 08:34:09;[32minfo[39m;undefined}
+2022-07-07 08:34:09;[32minfo[39m;undefined}
+2022-07-07 08:34:52;[32minfo[39m;undefined}
+2022-07-07 08:34:52;[32minfo[39m;undefined}
+2022-07-07 08:34:52;[32minfo[39m;undefined}
+2022-07-07 08:34:53;[32minfo[39m;undefined}
+2022-07-07 08:34:53;[32minfo[39m;undefined}
+2022-07-07 08:34:53;[32minfo[39m;undefined}
+2022-07-07 08:35:15;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:35:16;[32minfo[39m;undefined}
+2022-07-07 08:35:16;[32minfo[39m;undefined}
+2022-07-07 08:35:16;[32minfo[39m;undefined}
+2022-07-07 08:49:14;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:49:21;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:49:23;[32minfo[39m;undefined}
+2022-07-07 08:49:23;[32minfo[39m;undefined}
+2022-07-07 08:49:23;[32minfo[39m;undefined}
+2022-07-07 08:49:32;[32minfo[39m;undefined}
+2022-07-07 08:49:47;[32minfo[39m;undefined}
+2022-07-07 08:49:47;[31merror[39m;"ConnectionError: Failed to connect to A-CIDI-157:1433 in 15000ms"}
+2022-07-07 08:49:51;[32minfo[39m;undefined}
+2022-07-07 08:50:06;[31merror[39m;"ConnectionError: Failed to connect to A-CIDI-157:1433 in 15000ms"}
+2022-07-07 08:50:28;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:50:30;[32minfo[39m;undefined}
+2022-07-07 08:50:30;[31merror[39m;"RequestError: Invalid object name 'PERSONAJES'."}
+2022-07-07 08:50:45;[32minfo[39m;undefined}
+2022-07-07 08:50:45;[32minfo[39m;undefined}
+2022-07-07 08:50:45;[32minfo[39m;undefined}
+2022-07-07 08:56:12;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:56:36;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:56:45;[32minfo[39m;undefined}
+2022-07-07 08:57:07;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:57:09;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:57:10;[32minfo[39m;undefined}
+2022-07-07 08:57:20;[32minfo[39m;"Started in port 3000"}
+2022-07-07 08:57:21;[32minfo[39m;undefined}
+2022-07-07 08:57:21;[32minfo[39m;undefined}
+2022-07-07 08:57:21;[32minfo[39m;undefined}
