@@ -1,4 +1,5 @@
-import * as Config from "./config.js"
+import * as Config from "./firebase_config.js"
+console.log("AAAAAA")
 firebase.initializeApp(Config.firebaseConfig)
 var provider = new firebase.auth.GoogleAuthProvider()
 

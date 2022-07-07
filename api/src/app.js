@@ -44,6 +44,9 @@ app.use("/api/characters", CAVRouter);
 
 app.use(express.static("public"))
 
+app.use('/pub',express.static(path.join(__dirname, 'public')));
+app.use('/config',express.static(path.join(__dirname, 'config')));
+
 app.get("/", async (req, res) => {
     res.sendFile(path.join(__dirname, './public', 'index.html'));
 })
