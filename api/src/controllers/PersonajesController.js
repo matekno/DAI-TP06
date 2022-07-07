@@ -40,4 +40,21 @@ router.post('/', async (req, res) => {
     }
 });
 
+router.delete('/:id', async (req, res) => {
+    try {
+        const result = await PersonajesServices.DeleteCharacterByID(req.params.id);
+        logger.log({
+            level: 'info',
+            message: result.recordset,
+        });
+        res.send(result.recordset[0].testID);
+    } catch (error) {
+        logger.log({
+            level: 'error',
+            message: error.toString()
+        })
+        res.status(400).send(error.toString());
+    }
+});
+
 export default router;
