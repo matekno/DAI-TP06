@@ -1,5 +1,6 @@
 import config from "../config/dbconfig.js";
 import sql from "mssql";
+import {parse as parse} from 'uuid'
 
 class DBUtils {
     static select = async (table) => {
@@ -23,7 +24,15 @@ class DBUtils {
     }
 
     static delete = async (table, whereCondition) => {
-        let query = `DELETE FROM ${table} WHERE ${whereCondition.key} = ${whereCondition.value}`;
+        let query = `DELETE FROM ${table} WHERE ${whereCondition.key} = '${whereCondition.value}'`;
+        let pool = await sql.connect(config);
+        let result = await pool.request().query(query);
+        return result;
+    };
+
+    static deleteFromUuid = async (table, whereCondition) => {
+        const id = parse(whereCondition.value)
+        let query = `DELETE FROM ${table} WHERE ${whereCondition.key} = '${id}'`;
         let pool = await sql.connect(config);
         let result = await pool.request().query(query);
         return result;

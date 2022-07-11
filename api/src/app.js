@@ -1,5 +1,6 @@
 import express from "express";
 import logger from './utils/logger.js'
+import loggerUtils from "./utils/loggerUtils.js";
 import CAVRouter from "./controllers/PersonajesController.js";
 import cors from 'cors'
 import bp from 'body-parser';
@@ -51,8 +52,5 @@ app.get("/", async (req, res) => {
 })
 
 app.listen(port, () => {
-    logger.log({
-        level: 'info',
-        message: `Started in port ${port}`
-    })
+    loggerUtils.logInfo(`Started in port ${port}`);
 })

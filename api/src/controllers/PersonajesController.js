@@ -1,5 +1,6 @@
 import { Router } from "express";
 import logger from "../utils/logger.js";
+import loggerUtils from "../utils/loggerUtils.js";
 import PersonajesServices from "../services/PersonajesServices.js";
 
 
@@ -40,9 +41,9 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/', async (req, res) => {
     try {
-        const result = await PersonajesServices.DeleteCharacterByID(req.params.id);
+        const result = await PersonajesServices.DeleteCharacterByID(req.body.id);
         logger.log({
             level: 'info',
             message: result.recordset,
@@ -56,5 +57,16 @@ router.delete('/:id', async (req, res) => {
         res.status(400).send(error.toString());
     }
 });
+
+router.put(':id', async(req, res) =>{
+    try {
+        const result = await PersonajesServices.UpdateCharacter(req.params.id, req.body.personaje)
+        loggerUtils.logInfo(result.recordset)
+        res.send(result.recordset[0].testID);
+    } catch (error) {
+        loggerUtils.logError(error.toString())
+        res.status(400).send(error.toString());
+    }
+})
 
 export default router;
