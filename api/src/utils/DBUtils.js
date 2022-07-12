@@ -10,7 +10,7 @@ class DBUtils {
     };
 
     static insert = async (table, cols, valuesString) => {
-        let query = `INSERT INTO ${table} (${cols}) VALUES (${valuesString}) SELECT inserted.Id`;
+        let query = `INSERT INTO ${table} (${cols}) VALUES (${valuesString}) SELECT CAST( SCOPE_IDENTITY () AS INT)`;
         let pool = await sql.connect(config);
         let result = await pool.request().query(query);
         return result;

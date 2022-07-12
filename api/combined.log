@@ -242,3 +242,18 @@
 2022-07-12 08:09:37;[32minfo[39m;"Started in port 3000"}
 2022-07-12 08:11:37;[32minfo[39m;"Started in port 3000"}
 2022-07-12 08:12:24;[32minfo[39m;"Started in port 3000"}
+2022-07-12 08:13:41;[32minfo[39m;"Started in port 3000"}
+2022-07-12 08:14:39;[32minfo[39m;"Started in port 3000"}
+2022-07-12 08:16:38;[32minfo[39m;"Started in port 3000"}
+2022-07-12 08:16:39;[31merror[39m;"ConnectionError: Login failed for user 'usuario'."}
+2022-07-12 08:17:15;[32minfo[39m;"Started in port 3000"}
+2022-07-12 08:17:38;[31merror[39m;"TypeError: Cannot read properties of undefined (reading 'logInfo')"}
+2022-07-12 08:18:11;[32minfo[39m;"Started in port 3000"}
+2022-07-12 08:18:11;[32minfo[39m;[]}
+2022-07-12 08:19:46;[32minfo[39m;[]}
+2022-07-12 08:22:50;[31merror[39m;"RequestError: The multi-part identifier \"inserted.Id\" could not be bound."}
+2022-07-12 08:25:51;[32minfo[39m;"Started in port 3000"}
+2022-07-12 08:25:53;[31merror[39m;"RequestError: The multi-part identifier \"inserted.ID\" could not be bound."}
+2022-07-12 08:26:59;[32minfo[39m;"Started in port 3000"}
+2022-07-12 08:27:02;[31merror[39m;"RequestError: Incorrect syntax near the keyword 'SELECT'."}
+2022-07-12 08:27:20;[32minfo[39m;"Started in port 3000"}
