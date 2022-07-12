@@ -1,10 +1,8 @@
-import 'dotenv/config'
-
 const config = {
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    server: process.env.DB_SERVER,
-    database: process.env.DATABASE,
+    user: "usuario",
+    password: "password",
+    server: "A-LUM-07",
+    database: "DAI-TP06",
     options:{
         trustServerCertificate: true,
         trustedConnection: true
