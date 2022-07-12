@@ -21,30 +21,31 @@ router.post('/', async (req, res) => {
     try {
         const personaje = req.body;
         const result = await PersonajesServices.CreateNewCharacter(personaje);
-        loggerUtils.logInfo(result.recordset);
-        res.send(result.recordset[0].testID);
+        loggerUtils.logInfo(result);
+        res.send({nuevoId: result});
     } catch (error) {
         loggerUtils.logError(error.toString())
         res.status(400).send(error.toString());
     }
 });
 
-router.delete('/id', async (req, res) => {
+router.delete('/:id', async (req, res) => {
     try {
         const result = await PersonajesServices.DeleteCharacterByID(req.params.id);
-        loggerUtils.logInfo(result.recordset);
-        res.send(result.recordset[0].testID);
+        loggerUtils.logInfo(result);
+        res.send(result);
     } catch (error) {
         loggerUtils.logError(error.toString())
         res.status(400).send(error.toString());
     }
 });
 
-router.put(':id', async(req, res) =>{
+router.put('/:id', async(req, res) =>{
     try {
-        const result = await PersonajesServices.UpdateCharacter(req.params.id, req.body.personaje)
-        loggerUtils.logInfo(result.recordset);
-        res.send(result.recordset[0].testID);
+        const result = await PersonajesServices.UpdateCharacter(req.params.id, req.body)
+        console.log(result);
+        loggerUtils.logInfo(result);
+        res.send(result);
     } catch (error) {
         loggerUtils.logError(error.toString())
         res.status(400).send(error.toString());
