@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "67307262-6008-4f15-a2ac-4361366aa40d",
+		"_postman_id": "c4c90b81-77e5-4bc7-b6a5-7824bc415689",
 		"name": "DAI-TP06",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -21,6 +21,43 @@
 							"path": [
 								"api",
 								"characters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Characters (with params)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/characters?edad=37",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"characters"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "simp",
+									"description": "USAR SOLO UNO DE ESTOS PARAMS",
+									"disabled": true
+								},
+								{
+									"key": "peso",
+									"value": "44",
+									"description": "USAR SOLO UNO DE ESTOS PARAMS",
+									"disabled": true
+								},
+								{
+									"key": "edad",
+									"value": "37",
+									"description": "USAR SOLO UNO DE ESTOS PARAMS"
+								}
 							]
 						}
 					},
@@ -96,6 +133,86 @@
 								"characters",
 								"4"
 							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PAV",
+			"item": [
+				{
+					"name": "Get PAVs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/pav",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pav"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create PAV",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IMAGEN\": \"https://i.imgur.com/2NTUKzY.png\",\r\n    \"TITULO\": \"Los Simpson\",\r\n    \"FECHA_CREACION\": \"1989-12-17T00:00:00.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/pav",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pav"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete PAV",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/pav/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pav",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Movie with Characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
 						}
 					},
 					"response": []
