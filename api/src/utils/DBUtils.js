@@ -60,7 +60,15 @@ class DBUtils {
         let query = `SELECT * FROM ${table} WHERE ${valuesString};`;
         let pool = await sql.connect(config);
         let result = await pool.request().query(query);
-        return await result;
+        return result;
+    };
+
+    static ExecOneParam = async (sp, param) => {
+        let pool = await sql.connect(config);
+        let result = await pool.request()
+            .input(param.name, param.value)
+            .execute(sp);
+        return result;
     };
 };
 

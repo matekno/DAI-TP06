@@ -46,6 +46,10 @@ class PersonajesServices {
         const res = await DBUtils.selectWhereLike("PERSONAJES", {key: "PESO", value: o})
         return res;
     }
+    // static GetMoviesAndChars = async (o) => {
+    //     const res = await DBUtils.ExecOneParam("spGetCharactersAndProduction", {name: 'prod', value: o})
+    //     return res;
+    // }
 }
 
 export default PersonajesServices
