@@ -8,6 +8,17 @@ class DBUtils {
         let pool = await sql.connect(config);
         return await pool.request().query(query);
     };
+    static selectWhere = async (table, whereCondition) =>{
+        let query = `SELECT * FROM ${table} WHERE ${whereCondition.key} = '${whereCondition.value}'`
+        let pool = await sql.connect(config);
+        return await pool.request().query(query);
+    }
+
+    static selectWhereLike = async (table, whereCondition) =>{
+        let query = `SELECT * FROM ${table} WHERE ${whereCondition.key} LIKE '%${whereCondition.value}%'`
+        let pool = await sql.connect(config);
+        return await pool.request().query(query);
+    }
 
     static insert = async (table, cols, valuesString) => {
         let query = `INSERT INTO ${table} (${cols}) VALUES (${valuesString}) SELECT CAST( SCOPE_IDENTITY () AS INT)`;

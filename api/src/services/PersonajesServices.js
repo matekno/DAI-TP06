@@ -34,6 +34,18 @@ class PersonajesServices {
             return "ERROR :C"
         }
     }
+    static SearchCharacterByName = async (o) => {
+        const res = await DBUtils.selectWhereLike("PERSONAJES", {key: "NOMBRE", value: o})
+        return res;
+    }
+    static SearchCharacterByEdad = async (o) => {
+        const res = await DBUtils.selectWhereLike("PERSONAJES", {key: "EDAD", value: o})
+        return res;
+    }
+    static SearchCharacterByPeso = async (o) => {
+        const res = await DBUtils.selectWhereLike("PERSONAJES", {key: "PESO", value: o})
+        return res;
+    }
 }
 
 export default PersonajesServices

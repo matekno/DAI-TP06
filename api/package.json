@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev": "C:\\Users\\46293651\\AppData\\Roaming\\npm\\nodemon.cmd ./src/app.js",
+    "dev": "C:\\Users\\devandroid\\AppData\\Roaming\\npm\\nodemon.cmd ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

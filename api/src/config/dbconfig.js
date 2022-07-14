@@ -1,7 +1,7 @@
 const config = {
     user: "usuario",
     password: "password",
-    server: "A-LUM-07",
+    server: "A-CEO-04",
     database: "DAI-TP06",
     options:{
         trustServerCertificate: true,
